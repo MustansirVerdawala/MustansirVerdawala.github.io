@@ -162,8 +162,8 @@
             
             homeLink.addEventListener('click', function(event) {
                 event.preventDefault();
-                showSections([homeSection, specializationsSection]);
-                hideSections([aboutSection, projectsSection, contactSection]);
+                showSections([homeSection, specializationsSection, aboutSection]); // Include aboutSection here
+                hideSections([projectsSection, contactSection]);
             });
 
             projectsLink.addEventListener('click', function(event) {
