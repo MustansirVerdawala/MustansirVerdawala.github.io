@@ -6,13 +6,6 @@
     <title>Mustansir Verdawala</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <link rel="icon" type="image/jpeg" href="assets/favicon.jpeg"> <!-- Link to your icon -->
-    <style>
-        /* Reset margin and padding for all sections */
-        section {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -21,7 +14,6 @@
             <ul>
                 <li><a href="#home" id="home-link">Home</a></li>
                 <li><a href="#projects" id="projects-link">Projects</a></li>
-                <li><a href="#contact" id="contact-link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -74,67 +66,168 @@
         </div>
     </section>    
 
-    <section id="projects" style="display: none;">
-        <h2>Under Construction 🚧</h2>
-        <!--<h2>My Projects</h2>-->
-        <!-- Projects Content -->
-    </section>
-
-    <section id="contact" style="display: none;">
-        <h2>Under Construction 🚧</h2>
-        <!--<h2>Contact Me</h2>-->
-        <!-- Contact Form or Information -->
-    </section>
-
-    <section id="specializations" style="display: none;">
-        <h2>My Specializations</h2>
-        <div class="specializations-container">
-            <div class="specialization">
-                <img src="assets/devOps.jpg" alt="Software Development">
-                <h3>Software Development</h3>
-                <p>Description of software development specialization goes here.</p>
-                <div class="skills">
-                    <h4>Skills</h4>
-                    <ul>
-                        <li>Programming Languages: Java, Python, C++</li>
-                        <li>Web Development: HTML, CSS, JavaScript</li>
-                        <li>Frameworks: Spring Boot, Django</li>
-                        <li>Methodologies: Agile Development, CI/CD Pipelines</li>
-                        <!-- Add more skills as needed -->
-                    </ul>
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <!-- Navigation menu for projects subsections -->
+        <nav class="projects-nav">
+            <ul>
+                <li><a href="#python">Python</a></li>
+                <li><a href="#java">Java</a></li>
+                <li><a href="#c">C</a></li>
+                <li><a href="#frontend">Front End</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Python Projects -->
+        <div id="python" class="subsection">
+            <h3 class="subsection-title">Python Projects</h3>
+            <div class="projects-grid">
+                <!-- Project: Rubik's Cube Solver and Simulator -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/Rubiks.png" alt="Rubik's Cube Solver">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Rubik's Cube Solver and Simulator</h4>
+                        <p class="project-description">The Rubik's Cube Solver and Simulator project involves coding a program capable of solving a Rubik's Cube from any given configuration and simulating the cube's movements based on a sequence of rotations.</p>
+                        <ul class="project-features">
+                            <li>Implementing algorithms to systematically solve the Rubik's Cube</li>
+                            <li>Breaking down the problem into smaller steps</li>
+                            <li>Utilizing specific algorithms commonly used by speedcubers</li>
+                            <li>Accurately representing the Rubik's Cube in code</li>
+                            <li>Performing rotations based on user input or predefined sequences</li>
+                        </ul>
+                        <a href="https://github.com/MustansirVerdawala/Python/blob/main/RubiksSolver.py" class="project-link">View Project</a>
+                    </div>
                 </div>
-            </div>
-            <div class="specialization">
-                <img src="assets/cybersec.jpeg" alt="Cybersecurity">
-                <h3>Cybersecurity</h3>
-                <p>Description of cybersecurity specialization goes here.</p>
-                <div class="skills">
-                    <h4>Skills</h4>
-                    <ul>
-                        <li>Scripting Languages: Python, Bash </li>
-                        <li>Web Development: HTML, PHP, JavaScript</li>
-                        <li>Tools and Technologies: Kali Linux OS, NMAP, John the Ripper, Burp Suite, Metasploit</li>
-                        <li>Cryptography: Hashes, Steganography, Encryption and Decryption</li>
-                        <!-- Add more skills as needed -->
-                    </ul>
-                </div>
-            </div>
-            <div class="specialization">
-                <img src="assets/AI.jpeg" alt="Machine Learning">
-                <h3>Machine Learning</h3>
-                <p>Description of machine learning specialization goes here.</p>
-                <div class="skills">
-                    <h4>Skills</h4>
-                    <ul>
-                        <li>Programming Languages: Python, MATLAB</li>
-                        <li>Libraries: Tensorflow, keras, OpenCV</li>
-                        <!-- Add more skills as needed -->
-                    </ul>
-                </div>
+                <!-- End of Project: Rubik's Cube Solver and Simulator -->
+    
+                <!-- Add more Python projects as needed -->
             </div>
         </div>
-    </section>
-
+    
+        <!-- Java Projects -->
+        <div id="java" class="subsection">
+            <h3 class="subsection-title">Java Projects</h3>
+            <div class="projects-grid">
+                <!-- Project: Bank Account Management System -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/Bank.png" alt="Bank Account Management System">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Bank Account Management System</h4>
+                        <p class="project-description">This project implements a simple bank account management system in Java. It consists of two classes: Account and Bank, which allow for account creation, deposits, withdrawals, and account management within a bank.</p>
+                        <a href="https://github.com/MustansirVerdawala/Java/blob/main/BankAccount" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Project: Blackjack Game -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/BlackJack.jpg" alt="Blackjack Game">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Blackjack Game</h4>
+                        <p class="project-description">This project implements a simple blackjack game in Java. It includes classes for managing the game logic, cards, card pile, and user interface. The game allows players to play against the computer (house) and displays the final outcome.</p>
+                        <a href="https://github.com/MustansirVerdawala/Java/tree/main/BlackJack%20Game" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Project 3: Circuit Builder -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/Circuit.jpeg" alt="Circuit Builder">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Circuit Builder</h4>
+                        <p class="project-description">This project implements a simple circuit builder in Java. It allows users to create resistors (R) and voltage sources (V) by providing appropriate command inputs. The program checks the validity of the inputs and displays the components. The "spice" command is used to check component polarity.</p>
+                        <a href="https://github.com/MustansirVerdawala/Java/tree/main/Circuit%20Builder" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <!-- End of Project 3 -->
+                <!-- Project 4: Flight Booking -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/Flight.jpg" alt="FlightBooking">
+                    </div>
+                    <div class="project-details"><h4 class="project-title">Flight Booking</h4>
+                        <p class="project-description">This project implements a simple flight booking system in Java. It includes classes for managing flights, passengers, and tickets. The system allows users to create flights, book seats, and apply discounts based on membership status and age.</p>
+                        <a href="https://github.com/MustansirVerdawala/Java/tree/main/FlightBooking" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <!-- End of Project 4 -->
+                <!-- Project: Odometer -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/Odometer.jpg" alt="Odometer">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Odometer</h4>
+                        <p class="project-description">This project implements an odometer in Java, which counts through a specified number of digits using linked digit counters. It includes classes for abstract and linked digit counters, as well as an odometer class to manage the count.</p>
+                        <a href="https://github.com/MustansirVerdawala/Java/tree/main/Odometer" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <!-- End of Project: Odometer -->
+                <!-- Add more Java projects as needed -->
+            </div>
+        </div>
+    
+        <!-- C Projects -->
+        <div id="c" class="subsection">
+            <h3 class="subsection-title">C Projects</h3>
+            <div class="projects-grid">
+                <!-- Project: Diabetic Population Data Manipulation -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/DataMan.png" alt="Diabetic Population Data Manipulation">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Diabetic Population Data Manipulation</h4>
+                        <p class="project-description">A data manipulation program written in C to analyze diabetic population statistics. The program reads data from a CSV file, processes it, and provides various statistics and analyses.</p>
+                        <ul class="project-features">
+                            <li>Calculating provincial and national averages</li>
+                            <li>Analyzing trends over time and by age group</li>
+                            <li>Identifying extremes and determining diabetes status</li>
+                            <li>Sorting and outputting data</li>
+                        </ul>
+                        <h6 class="collaborators">Written in collaboration with Soham Naithani, Jacky Zhang, Aronno Das.</h6>
+                        <a href="https://github.com/MustansirVerdawala/C/blob/main/DiabeticPopulationDataManipulation.txt" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Add more C projects as needed -->
+            </div>
+        </div>
+    
+        <!-- Front-end Projects -->
+        <div id="frontend" class="subsection">
+            <h3 class="subsection-title">Front-end Projects</h3>
+            <div class="projects-grid">
+                <!-- Project: Basic Website -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/Basic.jpg" alt="Basic Website">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Basic Website</h4>
+                        <p class="project-description">The code defines a basic HTML5 webpage with a black background. It includes a styled header with a navigation menu, a sticky header, and multiple styled div elements with hover effects. The page has a simple and responsive design using cursive fonts and contrasting colors.</p>
+                        <a href="https://github.com/MustansirVerdawala/FrontEnd/blob/main/Basic.htm" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Project: FIFA World Cup 2022 Teams Roster -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/FIFA.png" alt="FIFA World Cup 2022 Teams Roster">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">FIFA World Cup 2022 Teams Roster</h4>
+                        <p class="project-description">The HTML code creates a webpage for the FIFA World Cup 2022. It includes a header, navigation bar, and main content sections styled with CSS. The content covers information about the host country, Qatar, and displays tournament groups, teams, and results in a table. Team logos spin on hover, revealing additional details.</p>
+                        <a href="https://github.com/MustansirVerdawala/MustansirVerdawala" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <!-- Add more Front-end projects as needed -->
+            </div>
+        </div>
+    </section>    
+    
     <footer>
         <h2>Connect with Me</h2>
         <ul class="footer-bar">
@@ -150,32 +243,27 @@
         document.addEventListener('DOMContentLoaded', function() {
             const homeLink = document.getElementById('home-link');
             const projectsLink = document.getElementById('projects-link');
-            const contactLink = document.getElementById('contact-link');
             const homeSection = document.getElementById('home');
             const aboutSection = document.getElementById('about');
-            const projectsSection = document.getElementById('projects');
-            const contactSection = document.getElementById('contact');
-            const specializationsSection = document.getElementById('specializations');
+            const projectsSection = document.getElementById('projects'); // Added this line
+            const footer = document.querySelector('footer');
 
-            // Show both home and specializations sections by default
-            showSections([homeSection, specializationsSection]);
-            
+            // Show only home and about sections by default
+            showSections([homeSection, aboutSection]);
+            hideSections([projectsSection]); // Hide projects section by default
+
             homeLink.addEventListener('click', function(event) {
                 event.preventDefault();
-                showSections([homeSection, specializationsSection, aboutSection]); // Include aboutSection here
-                hideSections([projectsSection, contactSection]);
+                showSections([homeSection, aboutSection]);
+                hideSections([projectsSection]);
+                footer.style.display = 'block';
             });
 
             projectsLink.addEventListener('click', function(event) {
                 event.preventDefault();
                 showSection(projectsSection);
-                hideSections([homeSection, aboutSection, contactSection, specializationsSection]);
-            });
-
-            contactLink.addEventListener('click', function(event) {
-                event.preventDefault();
-                showSection(contactSection);
-                hideSections([homeSection, aboutSection, projectsSection, specializationsSection]);
+                hideSections([homeSection, aboutSection]);
+                footer.style.display = 'block';
             });
 
             function showSection(section) {
@@ -195,6 +283,18 @@
             }
         });
 
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectLinks = document.querySelectorAll('.projects-nav a');
+
+            projectLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
     </script>
 </body>
 </html>
