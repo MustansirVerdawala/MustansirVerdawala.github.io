@@ -43,7 +43,7 @@
                     <li>Created a library of functions and scripts to streamline manual annotation processes.</li>
                     <li>Developed an algorithm for anomaly detection in model segmentations.</li>
                     <li>Authored an academic abstract submitted to Imaging Network of Ontario, 2025.</li>
-                    <li>Co authored an academic abstract submitted to American Thoracic Society, 2024.</li>
+                    <li>Co authored an academic manuscript submitted to Radiology AI, 2025.</li>
                 </ul>
             </div>
 
@@ -84,18 +84,97 @@
         <!-- Navigation menu for projects subsections -->
         <nav class="projects-nav">
             <ul>
+                <li><a href="#research">Research</a></li>
                 <li><a href="#python">Python</a></li>
+                <li><a href='#fullstack'>Full-Stack</a></li>
+                <li><a href='#assembly'>Assembly</a></li>
                 <li><a href="#java">Java</a></li>
                 <li><a href="#c">C</a></li>
-                <li><a href='#assembly'>Assembly</a></li>
-                <li><a href="#webDev">Web Dev</a></li>
+                <li><a href="#webDev">Front-End</a></li>
             </ul>
         </nav>
+
+        <!-- Research Projects -->
+        <div id="research" class="subsection">
+            <h3 class="subsection-title">Research</h3>
+            <div class="projects-grid">
+                <!-- Project: Automated Diaphragm Segmentation via Deep Learning from CTs -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/Diaphragm.png" alt="Diaphragm Segmentations">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Automated Diaphragm Segmentation via Deep Learning from CTs</h4>
+                        <p class="project-description">Conducted as part of my academic research at Toronto Metropolitan University, this project involved developing an automated deep learning pipeline for diaphragm segmentation from chest CT images.</p>
+                        <ul class="project-features">
+                            <li>I designed and trained a segmentation model that significantly accelerated the mask creation process — slashing manual work from 4 hours to just 2 minutes per scan.</li>
+                            <li>Statistical analysis was conducted using MATLAB and IBM SPSS to validate model performance and extract relevant biomarkers for further clinical study. </li>
+                            <li>This work was accepted for oral presentation at Imaging Network Ontario (IMNO) 2025.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project: Pectoralis Muscle Volume Measurements from Chest CTs -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/Pecs.png" alt="Pectoralis Segmentations">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Pectoralis Muscle Volume Measurements from Chest CTs</h4>
+                        <p class="project-description">This project involved developing a deep learning model for measuring the volume of pectoralis muscles from chest CT scans in COPD patients.</p>
+                        <ul class="project-features">
+                            <li>As a co-researcher, I contributed to the model development, focusing on the image segmentation and data preprocessing for training the model.</li>
+                            <li>The goal was to identify biomarkers for COPD progression, with the model showing promising accuracy in segmenting the pectoralis muscle.</li>
+                            <li>The project was submitted for publication in Radiology AI and is currently under review.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Add more Research projects as needed -->
+            </div>
+        </div>
     
         <!-- Python Projects -->
         <div id="python" class="subsection">
             <h3 class="subsection-title">Python Projects</h3>
             <div class="projects-grid">
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/RLGame.png" alt="RL Game">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Deep Reinforcement Learning Agent</h4>
+                        <p class="project-description">Developed a Deep Q-Learning agent using Python and TensorFlow, optimizing the agent's policy to dodge enemy
+                            bullets in a 2D game environment.</p>
+                        <ul class="project-features">
+                            <li>Collaborated with a peer, who developed the game in Unity</li>
+                            <li>Established a TCP socket connection to send moves from Python to Unity</li>
+                            <li>Utilized GitHub for source control throughout the project</li>
+                            <li>Trained the agent to dodge bullets</li>
+                        </ul>
+                        <h6 class="collaborators">Project completed in collaboration with Jacky Zhang.</h6>
+                        <a href="https://github.com/MustansirVerdawala/Python/blob/main/DRL" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/Race.png" alt="NEAT Algorithm Race Track">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">NEAT Race Track Navigator</h4>
+                        <p class="project-description">Developed and trained a NEAT (NeuroEvolution of Augmenting Topologies) algorithm to optimize the navigation of a vehicle across a race track.</p>
+                        <ul class="project-features">
+                            <li>The genetic algorithm evolved a population of neural networks, allowing them to learn the best driving strategy over multiple generations.</li>
+                            <li>Custom value functions were used, based on strategically placed checkpoints, to encourage better navigation times and efficiency.</li>
+                            <li>Reinforcement learning was incorporated to continuously improve the agents' performance, with the best-performing networks from each generation being selected and mutated for the next.</li>
+                        </ul>
+                        <a href="https://github.com/MustansirVerdawala/Python/tree/main/NEAT_Race" class="project-link">View Project</a>
+                    </div>
+                </div>
+    
+                <!-- Add more Python projects as needed -->
+    
                 <!-- Project: Rubik's Cube Solver and Simulator -->
                 <div class="project">
                     <div class="project-thumbnail">
@@ -116,26 +195,60 @@
                 </div>
                 <!-- End of Project: Rubik's Cube Solver and Simulator -->
 
+            </div>
+        </div>
+
+        <!-- Full Stack Projects -->
+        <div id="fullstack" class="subsection">
+            <h3 class="subsection-title">Full Stack</h3>
+            <div class="projects-grid">
+                <!-- Project: Online Recipe Forum -->
                 <div class="project">
                     <div class="project-thumbnail">
-                        <img src="assets/RLGame.png" alt="RL Game">
+                        <img src="assets/OnlineRecipeForum.png" alt="Online Recipe Forum">
                     </div>
                     <div class="project-details">
-                        <h4 class="project-title">Deep Reinforcement Learning Agent</h4>
-                        <p class="project-description">Developed a Deep Q-Learning agent using Python and TensorFlow, optimizing the agent's policy to dodge enemy
-                            bullets in a 2D game environment.</p>
+                        <h4 class="project-title">Online Recipe Forum</h4>
+                        <p class="project-description">Developed a full-stack web application that allows users to register, log in, and browse recipes.</p>
                         <ul class="project-features">
-                            <li>Collaborated with a peer, who developed the game in Unity</li>
-                            <li>Established a TCP socket connection to send moves from Python to Unity</li>
-                            <li>Utilized GitHub for source control throughout the project</li>
-                            <li>Trained the agent to dodge bullets</li>
+                            <li>The backend was built using Java with microservices architecture and MySQL for data management.</li>
+                            <li>Frontend developed using HTML and CSS, with deployment on Google Cloud using Docker and Kubernetes for scalability.</li>
                         </ul>
-                        <h6 class="collaborators">Project completed in collaboration with Jacky Zhang.</h6>
-                        <a href="https://github.com/MustansirVerdawala/Python/blob/main/DRL" class="project-link">View Project</a>
+                        <a href="https://github.com/MustansirVerdawala/Full-Stack/tree/main/OnlineRecipeForum" class="project-link">View Project</a>
                     </div>
                 </div>
     
-                <!-- Add more Python projects as needed -->
+                <!-- Add more Full Stack projects as needed -->
+            </div>
+        </div>
+
+        <!-- Assembly Projects -->
+        <div id="assembly" class="subsection">
+            <h3 class="subsection-title">Assembly Projects</h3>
+            <div class="projects-grid">
+                <!-- Project: EEBot Maze Navigation -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <video width="400" height="300" controls>
+                          <source src="assets/eebot.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">EEBot Maze Navigation</h4>
+                        <p class="project-description">Developed a path-finding program for the EEBot using assembly language on the HCS12 microcontroller.</p>
+                        <ul class="project-features">
+                            <li>Calibrated sensors to detect objects and lane markings, enabling the robot to roam autonomously and make informed turns at intersections</li>
+                            <li>Implemented a stack-based path-tracking system to record turns at each intersection, allowing the robot to backtrack and choose alternative routes when encountering dead ends</li>
+                            <li>Designed a state machine to manage real-time navigation and decision-making in the maze</li>
+                            <li>Programmed LCD interfacing to display navigation states and debugging information</li>
+                            <li>Debugged rigorously using breakpoints to ensure reliable navigation and efficient handling of closed ends</li>
+                        </ul>
+                        <a href="https://github.com/MustansirVerdawala/Assembly/tree/main/EEBot%20Maze%20Navigation/main.asm" class="project-link">View Project</a>
+                    </div>
+                </div>
+    
+                <!-- Add more Assembly projects as needed -->
             </div>
         </div>
     
@@ -143,29 +256,18 @@
         <div id="java" class="subsection">
             <h3 class="subsection-title">Java Projects</h3>
             <div class="projects-grid">
-                <!-- Project 1: Blackjack Game -->
+                <!-- Project 5: Bank Account Management System -->
                 <div class="project">
                     <div class="project-thumbnail">
-                        <img src="assets/BlackJack.jpg" alt="Blackjack Game">
+                        <img src="assets/Bank.png" alt="Bank Account Management System">
                     </div>
                     <div class="project-details">
-                        <h4 class="project-title">Blackjack Game</h4>
-                        <p class="project-description">This project implements a simple blackjack game in Java. It includes classes for managing the game logic, cards, card pile, and user interface. The game allows players to play against the computer (house) and displays the final outcome.</p>
-                        <a href="https://github.com/MustansirVerdawala/Java/tree/main/BlackJack%20Game" class="project-link">View Project</a>
+                        <h4 class="project-title">Bank Account Application</h4>
+                        <p class="project-description">This project implements a JavaFX bank account management application. It includes classes for managing customers, managers, bank accounts, and user interface elements. The application allows managers to login, add and delete customers, and view customer details. Customers can login, deposit, withdraw, make purchases, and view their account details. The application also implements a state design pattern to manage customer levels (Silver, Gold, Platinum) based on their account balance.</p>
+                        <a href="https://github.com/MustansirVerdawala/Java/blob/main/BankAccountApplication" class="project-link">View Project</a>
                     </div>
                 </div>
-                <!-- Project 2: Circuit Builder -->
-                <div class="project">
-                    <div class="project-thumbnail">
-                        <img src="assets/Circuit.jpeg" alt="Circuit Builder">
-                    </div>
-                    <div class="project-details">
-                        <h4 class="project-title">Circuit Builder</h4>
-                        <p class="project-description">This project implements a simple circuit builder in Java. It allows users to create resistors (R) and voltage sources (V) by providing appropriate command inputs. The program checks the validity of the inputs and displays the components. The "spice" command is used to check component polarity.</p>
-                        <a href="https://github.com/MustansirVerdawala/Java/tree/main/Circuit%20Builder" class="project-link">View Project</a>
-                    </div>
-                </div>
-                <!-- End of Project 2 -->
+
                 <!-- Project 3: Flight Booking -->
                 <div class="project">
                     <div class="project-thumbnail">
@@ -177,6 +279,32 @@
                     </div>
                 </div>
                 <!-- End of Project 3 -->
+
+                 <!-- Project 2: Circuit Builder -->
+                 <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/Circuit.jpeg" alt="Circuit Builder">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Circuit Builder</h4>
+                        <p class="project-description">This project implements a simple circuit builder in Java. It allows users to create resistors (R) and voltage sources (V) by providing appropriate command inputs. The program checks the validity of the inputs and displays the components. The "spice" command is used to check component polarity.</p>
+                        <a href="https://github.com/MustansirVerdawala/Java/tree/main/Circuit%20Builder" class="project-link">View Project</a>
+                    </div>
+                </div>
+                <!-- End of Project 2 -->
+                
+                <!-- Project 1: Blackjack Game -->
+                <div class="project">
+                    <div class="project-thumbnail">
+                        <img src="assets/BlackJack.jpg" alt="Blackjack Game">
+                    </div>
+                    <div class="project-details">
+                        <h4 class="project-title">Blackjack Game</h4>
+                        <p class="project-description">This project implements a simple blackjack game in Java. It includes classes for managing the game logic, cards, card pile, and user interface. The game allows players to play against the computer (house) and displays the final outcome.</p>
+                        <a href="https://github.com/MustansirVerdawala/Java/tree/main/BlackJack%20Game" class="project-link">View Project</a>
+                    </div>
+                </div>
+               
                 <!-- Project 4: Odometer -->
                 <div class="project">
                     <div class="project-thumbnail">
@@ -189,17 +317,6 @@
                     </div>
                 </div>
                 <!-- End of Project 4: Odometer -->
-                <!-- Project 5: Bank Account Management System -->
-                <div class="project">
-                    <div class="project-thumbnail">
-                        <img src="assets/Bank.png" alt="Bank Account Management System">
-                    </div>
-                    <div class="project-details">
-                        <h4 class="project-title">Bank Account Application</h4>
-                        <p class="project-description">This project implements a JavaFX bank account management application. It includes classes for managing customers, managers, bank accounts, and user interface elements. The application allows managers to login, add and delete customers, and view customer details. Customers can login, deposit, withdraw, make purchases, and view their account details. The application also implements a state design pattern to manage customer levels (Silver, Gold, Platinum) based on their account balance.</p>
-                        <a href="https://github.com/MustansirVerdawala/Java/blob/main/BankAccountApplication" class="project-link">View Project</a>
-                    </div>
-                </div>
                 <!-- Add more Java projects as needed -->
             </div>
         </div>
@@ -266,39 +383,9 @@
             </div>
         </div>
 
-        <!-- Assembly Projects -->
-        <div id="assembly" class="subsection">
-            <h3 class="subsection-title">Assembly Projects</h3>
-            <div class="projects-grid">
-                <!-- Project: EEBot Maze Navigation -->
-                <div class="project">
-                    <div class="project-thumbnail">
-                        <video width="400" height="300" controls>
-                          <source src="assets/eebot.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="project-details">
-                        <h4 class="project-title">EEBot Maze Navigation</h4>
-                        <p class="project-description">Developed a path-finding program for the EEBot using assembly language on the HCS12 microcontroller.</p>
-                        <ul class="project-features">
-                            <li>Calibrated sensors to detect objects and lane markings, enabling the robot to roam autonomously and make informed turns at intersections</li>
-                            <li>Implemented a stack-based path-tracking system to record turns at each intersection, allowing the robot to backtrack and choose alternative routes when encountering dead ends</li>
-                            <li>Designed a state machine to manage real-time navigation and decision-making in the maze</li>
-                            <li>Programmed LCD interfacing to display navigation states and debugging information</li>
-                            <li>Debugged rigorously using breakpoints to ensure reliable navigation and efficient handling of closed ends</li>
-                        </ul>
-                        <a href="https://github.com/MustansirVerdawala/Assembly/tree/main/EEBot%20Maze%20Navigation/main.asm" class="project-link">View Project</a>
-                    </div>
-                </div>
-    
-                <!-- Add more Assembly projects as needed -->
-            </div>
-        </div>
-    
         <!-- Front-end Projects -->
         <div id="webDev" class="subsection">
-            <h3 class="subsection-title">Web Dev Projects</h3>
+            <h3 class="subsection-title">Front End Projects</h3>
             <div class="projects-grid">
                 <!-- Project: Basic Website -->
                 <div class="project">
